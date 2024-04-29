@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dashboard.css">
+    <script defer src="/dashboard.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+       <div class="nav_bar">
+            <div class="search_bar">
+                <input type="text" class="search_field" placeholder="Customer Name">
+                <button class="search_btn">Search</button>
+            </div>
+
+            <div class="new_data">
+                <button class="upload_btn">Upload</button>
+            </div>
+       </div>
+
+       <div class="data_container">
+            <!-- <div class="customer">
+                <h3>Name: Akash Bansal</h3>
+                <h3>S/O: Baldev Raj Bansal</h3>
+                <h3>DOB: 11 Dec, 1997</h3>
+                <h3>City/Village: Bagha Purana</h3>
+
+                <button class="delete_customer">❌</button>
+            </div> -->
+       </div>
+    </div>
+
+    <div class="overlay_window hidden"></div>
+<!-- ----------------------------------- Uploading customer data window -------------------------------  -->
+    <div class="upload_window hidden">
+        <button class="close_window button">Close</button>
+        <form class="customer_data">
+            <div class="input_container">
+                <div class="personal_data col">
+                    <input type="text" class="customer_name cust" name="name" placeholder="Name">
+                    <input type="text" class="customer_parent cust" name="parent" placeholder="S/O">
+                    <input type="text" class="customer_age cust" name="age" placeholder="DOB">
+                    <input type="text" class="customer_address cust" name="address" placeholder="City / Village">
+                </div>
+                <div class="eye_info col">
+                    <input type="text" class="customer_rightEye cust" name="rightEye" placeholder="Right Eye">
+                    <input type="text" class="customer_leftEye cust" name="leftEye" placeholder="Left Eye">
+                    <input type="text" class="customer_degree cust" name="degree" placeholder="Degree / Angle">
+                    <input type="text" class="customer_addition cust" name="addition" placeholder="Addition / Near Vision">
+                    <!-- Type <select name="sph_cyl" id="typeOfGlass" >
+                        <option value="#"></option>
+                        <option value="sph">Spherical</option>
+                        <option value="cyl">Cylindrical</option>
+                    </select> -->
+                </div>
+                <button class="submit_btn button">Submit</button>
+            </div>
+        </form>
+    </div>
+    <!-- ----------------------------------- Customer Details Window --------------------------------------- -->
+    <div class="whole_area">
+        <div class="detais_window hidden">
+            <!-- <button class="close_detailsWindow button">Close</button> -->
+            <!-- <div class="column1">
+                <h3>Name: Akash Bansal</h3>
+                <h3>S/O: Baldev Raj Bansal</h3>
+                <h3>DOB: 11 Dec, 1997</h3>
+                <h3>City/Village: Bagha Purana</h3>
+            </div>
+            <div class="column2">
+                <h3>Right Eye: </h3>
+                <h3>Left Eye:</h3>
+                <h3>Degree / Angle:</h3>
+                <h3>Addition / Near Vision:</h3>
+            </div> -->
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,278 @@
+body{
+    background-color: #489F78;
+}
+
+.container{
+    position: absolute;
+    margin: 40px;
+    height: 85vh;
+    width: 190vh;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.data_container{
+    height: 70vh;
+    width: 180vh;
+    margin-left: 30px;
+    margin-top: 15px;
+    overflow-x: hidden;
+}
+
+.nav_bar{
+    height: 60px;
+    display: flex;
+}
+
+.delete_customer{
+    position: relative;
+    height: 35px;
+    border: #489F78 solid 2px;
+    background-color: white;
+    border-radius: 100%;
+    font-size: 15px;
+    top: 15px;
+}
+
+.delete_customer:hover{
+    background-color: #80aa97
+}
+
+/* Search Bar */
+
+.search_bar{
+    width: 160vh;
+    height: 60px;
+    
+}
+
+.search_field{
+    box-sizing: border-box;
+    height: 45px;
+    width: 135vh;
+    padding: 20px;
+    margin: 6px;
+    background-color: #b9f7db;
+    border: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.search_btn{
+    position: relative;
+    box-sizing: border-box;
+    height: 45px;
+    border: none;
+    width: 140px;
+    right: 10px;
+    background-color: #a0e0c4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.search_btn:hover{
+    background-color: #6ebb9a;
+}
+
+.new_data{
+    width: 30vh;
+    height: 60px;
+}
+
+.upload_btn{
+    height: 45px;
+    border: none;
+    width: 27vh;
+    margin: 6px;
+    font-size: 20px;
+    background-color: #43cf93;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 30px;
+}
+.upload_btn:hover{
+    background-color: #3c8666;
+}
+
+.customer{
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #b9f7db;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
+.overlay_window{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 3;
+}
+
+/* ///////////////////////  Uploading customer data window ////////////////////////////// */
+
+.upload_window{
+    position: absolute;
+    box-sizing: content-box;
+    height: 60vh;
+    width: 100vh;
+    margin-left: 350px;
+    margin-top: 100px;
+    border: #055e36 solid 2px;
+    background-color: #b9f7db;
+    border-radius: 20px;
+    z-index: 3;
+}
+
+.customer_data{
+    margin-left: 85px;
+    margin-top: 30px;
+}
+.input_container{
+    position: relative;
+    display: flex;
+    bottom: 25px;
+    right: 30px;
+}
+.col{
+    height: 300px;
+    width: 250px;
+    margin: 20px;
+}
+
+.customer_data input{
+    width: 200px;
+    height: 25px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: lightgray
+}
+
+.close_window{
+    position: relative;
+    border: none;
+    height: 20px;
+    width: 70px;
+    left: 87vh;
+    top: 15px;
+}
+.submit_btn{
+    position: relative;
+    border: none;
+    height: 20px;
+    width: 70px;
+    align-self: flex-end;
+    right: 310px;
+}
+.button:hover{
+    background-color: gray;
+}
+
+.hidden{
+    display: none !important;
+}
+
+/* /////////////////////////////////////////// Customer Details Window ///////////////////////////////////////////////// */
+.whole_area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.detais_window{
+    display: flex;
+    height: 400px;
+    width: 700px;
+    align-self: center;
+    border: #055e36 solid 2px;
+    background-color: #b9f7db;
+    border-radius: 20px;
+    z-index: 3;
+    padding: 20px;
+    
+}
+
+.close_detailsWindow{
+    position: relative;
+    border: none;
+    height: 20px;
+    width: 70px;
+    left: 90vh;
+    top: 3px;
+}
+
+.update_details{
+    position: relative;
+    border: none;
+    height: 20px;
+    width: 70px;
+    left: 85vh;
+    top: 3px;
+}
+
+.column1, .column2 {
+    width: 400px;
+    position: relative;
+    right: 20px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #033b22;
+    top: 50px;
+}
+/* details button */
+.details_customer{
+    position: relative;
+    height: 35px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 25px;
+    top: 15px;
+}
+.details_customer:hover{
+    cursor: pointer;
+    font-size: 27px;
+}
+
+/* ////////////////////////////////  Update Details Feature /////////////////////////////////// */
+
+.update_container{
+    position: relative;
+    display: flex;
+    top: 30px;
+    right: 10px;
+}
+
+.update_container input{
+    width: 200px;
+    height: 25px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: lightgray;
+}
+
+.update_button{
+    position: relative;
+    border: none;
+    height: 20px;
+    width: 70px;
+    top: 350px;
+    right: 330px;
+}
