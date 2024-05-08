@@ -9,13 +9,21 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <div>
-        <h1>Welcome to my first Project</h1>
-    </div>
+    <section class="main_section">
+    <div class="background_container"></div>
     <div class="login_container">
-        <input type="text" class="email_address" placeholder="Email address">
-        <input type="password" class="password" placeholder="Password">
+        <h3 class="welcome">Welcome back!</h3>
+        <h5 class="message">Enter your Credentials to access your account</h5>
+        <div class="email_box">
+            <p class="email_label">Email address</p>
+            <input type="text" class="email_address" name="email" placeholder="Enter your email">
+        </div>
+        <div class="password_box">
+            <p class="password_label">Password</p>
+            <input type="text" class="password" name="password" placeholder="Enter your password">
+        </div>
         <button class="login_button">Login</button>
     </div>
+</section>
 </body>
 </html>
