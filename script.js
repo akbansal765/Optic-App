@@ -11,8 +11,13 @@ const akash = {
 
 
 loginBtn.addEventListener('click', function(){
-     
-    console.log(password.value);
-    if(+password.value === akash.password && email.value === akash.email) 
-    window.open('/dashboard.html', '_blank');
-})
+
+    if(+password.value === akash.password && email.value === akash.email) {
+        window.open('/dashboard.html', '_blank');
+
+        // removing input values if the email and password is correct
+        password.value = '';
+        email.value = '';
+    };
+   
+});

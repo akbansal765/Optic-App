@@ -13,7 +13,6 @@ const detailsWindow = document.querySelector('.detais_window');
 
 
 
-
 // Functions
 const closeModal = function(){
       dataWindow.classList.toggle('hidden');
@@ -27,12 +26,16 @@ const closeDetailsModal = function(){
 const displayCustomer = function(data){
       const markup = `
       <div class="customer" id="${data.id}" >
-            <h3>Name: ${data.name}</h3>
-            <h3>S/O: ${data.parent}</h3>
-            <h3>DOB: ${data.age}</h3>
-            <h3>City/Village: ${data.address}</h3>
-            <button class="details_customer" id="${data.id}">📜</button>
-            <button class="delete_customer" id="${data.id}">❌</button>
+            <h3>Name: <span class="special">${data.name}</span></h3>
+            <h3>S/O: <span class="special">${data.parent}</span></h3>
+            <h3>DOB: <span class="special">${data.age}</span></h3>
+            <h3>City/Village: <span class="special">${data.address}</span></h3>
+            <button class="details_customer" id="${data.id}">
+               <img src="/images/main-menu.png" alt="">
+            </button>
+            <button class="delete_customer" id="${data.id}">
+               <img src="/images/cancel.png" alt="">
+            </button>
       </div>
       `
       container.insertAdjacentHTML('afterbegin', markup);

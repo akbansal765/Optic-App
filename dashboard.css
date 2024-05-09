@@ -1,82 +1,108 @@
-body{
-    background-color: #489F78;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.background{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(45deg, #828273 50%, #1C1C19 50%);
 }
 
 .container{
     position: absolute;
-    margin: 40px;
+    margin: 50px;
     height: 85vh;
     width: 190vh;
-    background-color: white;
+    background-image: url(/images/userDashboard2.jpg);
+    background-size: cover;
+    background-position: center;
     border-radius: 10px;
     z-index: 1;
+    padding: 40px;
+
+    /* display: none; */
 }
 
 .data_container{
-    height: 70vh;
-    width: 180vh;
-    margin-left: 30px;
-    margin-top: 15px;
+    height: 86%;
+    width: 100%;
     overflow-x: hidden;
+    padding-top: 30px;
+   
+    /* display: none; */
 }
 
 .nav_bar{
     height: 60px;
+    width: 100%;
     display: flex;
+
+    /* display: none; */
 }
 
+/*/////// delete button /////// */
 .delete_customer{
-    position: relative;
     height: 35px;
-    border: #489F78 solid 2px;
-    background-color: white;
-    border-radius: 100%;
-    font-size: 15px;
-    top: 15px;
+    width: 35px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
 }
-
-.delete_customer:hover{
-    background-color: #80aa97
+.delete_customer img{
+    height: 30px;
 }
-
+.delete_customer img:hover{
+    cursor: pointer;
+}
 /* Search Bar */
 
 .search_bar{
-    width: 160vh;
+    width: 100%;
     height: 60px;
-    
 }
 
 .search_field{
+    position: absolute;
     box-sizing: border-box;
     height: 45px;
-    width: 135vh;
-    padding: 20px;
+    width: 73%;
+    padding-left: 20px;
     margin: 6px;
-    background-color: #b9f7db;
+    background-color: #ffffff;
     border: none;
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-radius: 50px;
+    z-index: 0;
+    box-shadow: inset 0 0 5px rgb(172, 172, 172);
 }
-
+.search_field:focus{
+    outline: none;
+}
 .search_btn{
-    position: relative;
-    box-sizing: border-box;
-    height: 45px;
+    position: absolute;
+    top: 52px;
+    left: 912px;
+    height: 35px;
+    width: 35px;
     border: none;
-    width: 140px;
-    right: 10px;
-    background-color: #a0e0c4;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
     font-size: 20px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgb(160, 160, 160);
+    z-index: 1;
 }
-
-.search_btn:hover{
-    background-color: #6ebb9a;
+.search_btn img{
+    height: 25px;
+    width: 25px; 
+    position: relative;
+    top: 3px;
+}
+/* //////////////////////  Inner Shadow Effect  ///////////////// */
+.inner_shadow:hover{
+    box-shadow: inset 0px 0px 15px rgb(207, 203, 203);
 }
 
 .new_data{
@@ -90,24 +116,29 @@ body{
     width: 27vh;
     margin: 6px;
     font-size: 20px;
-    background-color: #43cf93;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
     border-radius: 30px;
+    color: #81817d;
+    box-shadow: inset 0 0 5px rgb(172, 172, 172);
 }
-.upload_btn:hover{
-    background-color: #3c8666;
-}
-
 .customer{
-    height: 70px;
+    height: 60px;
     display: flex;
-    justify-content: space-evenly;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #b9f7db;
-    border-radius: 50px;
-    margin-bottom: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content:space-between;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(150, 143, 143, 0.541);
+    padding: 30px;
 }
-
+.customer h3{
+    font-size: 16px;
+    font-weight: 300;
+}
+.special{
+    color: rgb(206, 199, 199);
+}
 .overlay_window{
     position: absolute;
     top: 0;
@@ -231,24 +262,25 @@ body{
     position: relative;
     right: 20px;
     font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #033b22;
     top: 50px;
 }
+
 /* details button */
 .details_customer{
-    position: relative;
+    position: absolute;
     height: 35px;
     border: none;
     background-color: rgba(255, 255, 255, 0);
     font-size: 25px;
-    top: 15px;
+    left: 1060px;
 }
-.details_customer:hover{
+.details_customer img{
+    height: 35px;
+}
+.details_customer > img:hover{
     cursor: pointer;
-    font-size: 27px;
 }
-
 /* ////////////////////////////////  Update Details Feature /////////////////////////////////// */
 
 .update_container{
