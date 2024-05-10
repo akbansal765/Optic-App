@@ -14,13 +14,13 @@
        <div class="nav_bar">
             <div class="search_bar">
                 <input type="text" class="search_field inner_shadow" placeholder="Customer Name">
-                <button class="search_btn inner_shadow">
+                <button class="search_btn inner_shadow cursor">
                     <img src="/images/magnifying-glass.png" alt="">
                 </button>
             </div>
 
             <div class="new_data">
-                <button class="upload_btn inner_shadow">Upload</button>
+                <button class="upload_btn inner_shadow cursor">Upload</button>
             </div>
        </div>
 
@@ -38,36 +38,48 @@
 
     <div class="overlay_window hidden"></div>
 <!-- ----------------------------------- Uploading customer data window -------------------------------  -->
+<div class="whole_area">
     <div class="upload_window hidden">
-        <button class="close_window button">Close</button>
+        <div class="box_1">
+           <button class="close_window cursor">
+               <img src="/images/cancel.png" alt="close">
+           </button>
+        </div>
         <form class="customer_data">
-            <div class="input_container">
-                <div class="personal_data col">
+            <div class="box_2">
+                <div class="column1">
+                    <p>Name :</p>
                     <input type="text" class="customer_name cust" name="name" placeholder="Name">
+                    <p>Mother/Father :</p>
                     <input type="text" class="customer_parent cust" name="parent" placeholder="S/O">
+                    <p>DOB :</p>
                     <input type="text" class="customer_age cust" name="age" placeholder="DOB">
+                    <p>City/Village :</p>
                     <input type="text" class="customer_address cust" name="address" placeholder="City / Village">
                 </div>
-                <div class="eye_info col">
+                <div class="column2">
+                    <p>Right Eye :</p>
                     <input type="text" class="customer_rightEye cust" name="rightEye" placeholder="Right Eye">
+                    <p>Left Eye :</p>
                     <input type="text" class="customer_leftEye cust" name="leftEye" placeholder="Left Eye">
+                    <p>Degree/Angle :</p>
                     <input type="text" class="customer_degree cust" name="degree" placeholder="Degree / Angle">
+                    <p>Addition/Near Vision :</p>
                     <input type="text" class="customer_addition cust" name="addition" placeholder="Addition / Near Vision">
-                    <!-- Type <select name="sph_cyl" id="typeOfGlass" >
-                        <option value="#"></option>
-                        <option value="sph">Spherical</option>
-                        <option value="cyl">Cylindrical</option>
-                    </select> -->
                 </div>
-                <button class="submit_btn button">Submit</button>
+            </div>
+            <div class="box_3">
+                <button class="submit_btn cursor inner_shadow">Upload</button>
             </div>
         </form>
     </div>
+</div>
     <!-- ----------------------------------- Customer Details Window --------------------------------------- -->
     <div class="whole_area">
         <div class="detais_window hidden">
-            <!-- <button class="close_detailsWindow button">Close</button> -->
-            <!-- <div class="column1">
+            <!-- <button class="update_details button">Update</button>
+            <button class="close_detailsWindow button">Close</button>
+            <div class="column1">
                 <h3>Name: Akash Bansal</h3>
                 <h3>S/O: Baldev Raj Bansal</h3>
                 <h3>DOB: 11 Dec, 1997</h3>

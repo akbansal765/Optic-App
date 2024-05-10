@@ -183,19 +183,36 @@ const detailsWindowPrimary = function(){  // here this keyword is pointing to "e
         arrayElements.push(arrayEl);
 
         const markup = `
-            <button class="update_details button">Update</button>
-            <button class="close_detailsWindow button">Close</button>
-            <div class="column1">
-                <h3>Name: ${arrayEl.name}</h3>
-                <h3>S/O: ${arrayEl.parent}</h3>
-                <h3>DOB: ${arrayEl.age}</h3>
-                <h3>City/Village: ${arrayEl.address}</h3>
+            <div class="box_1">
+              <button class="close_detailsWindow cursor">
+                 <img src="/images/cancel.png" alt="close">
+              </button>
             </div>
+            <div class="box_2">
+            <div class="column1">
+                <p>Name :</p>
+                <div>${arrayEl.name}</div>
+                <p>Mother/Father :</p>
+                <div>${arrayEl.parent}</div>
+                <p>DOB :</p>
+                <div>${arrayEl.age}</div>
+                <p>City/Village :</p>
+                <div>${arrayEl.address}</div>
+            </div>
+
             <div class="column2">
-                <h3>Right Eye: ${arrayEl.rightEye}</h3>
-                <h3>Left Eye: ${arrayEl.leftEye}</h3>
-                <h3>Degree / Angle: ${arrayEl.degree}</h3>
-                <h3>Addition / Near Vision: ${arrayEl.addition}</h3>
+                <p>Right Eye :</p>
+                <div>${arrayEl.rightEye}</div>
+                <p>Left Eye :</p>
+                <div>${arrayEl.leftEye}</div>
+                <p>Degree/Angle :</p>
+                <div>${arrayEl.degree}</div>
+                <p>Addition/Near Vision :</p>
+                <div>${arrayEl.addition}</div>
+            </div>
+            </div>
+            <div class="box_3">
+            <button class="update_details inner_shadow cursor">Update</button>
             </div>
         `;
         detailsWindow.innerHTML = markup;
@@ -222,23 +239,36 @@ const updateDetails = function(){
         const [valueObj] = arrayElements;
 
         const markup = `
-            <button class="close_detailsWindow button">Close</button>
-            <div class="update_container">
-                <div class="personal_data_edit col">
+            <div class="box_1">
+              <button class="close_detailsWindow cursor">
+                 <img src="/images/cancel.png" alt="close">
+              </button>
+            </div>
+            <div class="update_container box_2">
+                <div class="personal_data_edit column1">
+                    <p>Name :</p>
                     <input type="text" class="customer_name_update cust" name="name" placeholder="Name" value="${valueObj.name}">
-                    <input type="text" class="customer_parent_update cust" name="parent" placeholder="S/O" value="${valueObj.parent}">
+                    <p>Mother/Father :</p>
+                    <input type="text" class="customer_parent_update cust" name="parent" placeholder="Mother/Father" value="${valueObj.parent}">
+                    <p>DOB :</p>
                     <input type="text" class="customer_age_update cust" name="age" placeholder="DOB" value="${valueObj.age}">
+                    <p>City/Village :</p>
                     <input type="text" class="customer_address_update cust" name="address" placeholder="City / Village" value="${valueObj.address}">
                 </div>
-                <div class="eye_info_edit col">
+                <div class="eye_info_edit column2">
+                    <p>Right Eye :</p>
                     <input type="text" class="customer_rightEye_update cust" name="rightEye" placeholder="Right Eye" value="${valueObj.rightEye}">
+                    <p>Left Eye :</p>
                     <input type="text" class="customer_leftEye_update cust" name="leftEye" placeholder="Left Eye" value="${valueObj.leftEye}">
+                    <p>Degree/Angle :</p>
                     <input type="text" class="customer_degree_update cust" name="degree" placeholder="Degree / Angle" value="${valueObj.degree}">
+                    <p>Addition/Near Vision :</p>
                     <input type="text" class="customer_addition_update cust" name="addition" placeholder="Addition / Near Vision" value="${valueObj.addition}">
                 </div>
              </div>
-             <button class="update_button button">Update</button>
-             
+             <div class="box_3">
+               <button class="update_button inner_shadow cursor">Update</button>
+             </div>
         `;
         detailsWindow.innerHTML = markup;
 

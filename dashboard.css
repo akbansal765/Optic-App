@@ -154,58 +154,44 @@
 
 .upload_window{
     position: absolute;
-    box-sizing: content-box;
-    height: 60vh;
-    width: 100vh;
-    margin-left: 350px;
-    margin-top: 100px;
-    border: #055e36 solid 2px;
-    background-color: #b9f7db;
-    border-radius: 20px;
+    height: 425px;
+    width: 700px;
+    background-color: #443F3F;
+    border-radius: 15px;
     z-index: 3;
 }
-
 .customer_data{
-    margin-left: 85px;
-    margin-top: 30px;
+    height: 100%;
 }
-.input_container{
-    position: relative;
-    display: flex;
-    bottom: 25px;
-    right: 30px;
-}
-.col{
-    height: 300px;
-    width: 250px;
-    margin: 20px;
-}
-
 .customer_data input{
-    width: 200px;
-    height: 25px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 20px;
+    width: 90%;
+    height: 10%;
     border: none;
-    background-color: lightgray
+    background-color: rgb(240, 233, 233);
+    margin-bottom: 5%;
+    border-radius: 3px;
+    padding-left: 2%;
+    color: black;
+}
+.customer_data input:focus{
+    outline: none;
 }
 
 .close_window{
-    position: relative;
+    height: 50%;
+    width: 5%;
     border: none;
-    height: 20px;
-    width: 70px;
-    left: 87vh;
-    top: 15px;
+    background-color: rgba(255, 255, 255, 0);
+}
+.close_window img{
+    height: 70%;
+    width: 70%;
 }
 .submit_btn{
-    position: relative;
     border: none;
-    height: 20px;
-    width: 70px;
-    align-self: flex-end;
-    right: 310px;
+    height: 40%;
+    width: 70px;  
+    border-radius: 40px;
 }
 .button:hover{
     background-color: gray;
@@ -224,56 +210,87 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .detais_window{
-    display: flex;
-    height: 400px;
+    height: 425px;
     width: 700px;
-    align-self: center;
-    border: #055e36 solid 2px;
-    background-color: #b9f7db;
-    border-radius: 20px;
+    background-color: #443F3F;
+    border-radius: 15px;
     z-index: 3;
-    padding: 20px;
-    
 }
 
+.box_1{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2%;
+}
+.box_2{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    padding-left: 5%;
+
+}
+.box_3{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* /// close button  //// */
 .close_detailsWindow{
-    position: relative;
+    height: 50%;
+    width: 5%;
     border: none;
-    height: 20px;
-    width: 70px;
-    left: 90vh;
-    top: 3px;
+    background-color: rgba(255, 255, 255, 0);
+}
+.close_detailsWindow img{
+    height: 70%;
+    width: 70%;
 }
 
+/* //// Update Button  ////// */
 .update_details{
-    position: relative;
     border: none;
-    height: 20px;
-    width: 70px;
-    left: 85vh;
-    top: 3px;
+    height: 40%;
+    width: 70px;  
+    border-radius: 40px;
 }
 
 .column1, .column2 {
-    width: 400px;
+    width: 50%;
     position: relative;
-    right: 20px;
     font-size: 15px;
-    color: #033b22;
-    top: 50px;
+    color: white;
 }
 
+.column1 div, .column2 div{
+    height: 10%;
+    width: 85%;
+    background-color: #d9d9d95d;
+    margin-bottom: 4%;
+    padding-left: 4%;
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+}
+.box_2  p{
+    margin-bottom: 1%;
+    font-weight: 300;
+    font-size: 80%;
+}
 /* details button */
 .details_customer{
-    position: absolute;
     height: 35px;
     border: none;
     background-color: rgba(255, 255, 255, 0);
     font-size: 25px;
-    left: 1060px;
 }
 .details_customer img{
     height: 35px;
@@ -283,28 +300,35 @@
 }
 /* ////////////////////////////////  Update Details Feature /////////////////////////////////// */
 
-.update_container{
+/* .update_container{
     position: relative;
     display: flex;
     top: 30px;
     right: 10px;
-}
+} */
 
 .update_container input{
-    width: 200px;
-    height: 25px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 20px;
+    width: 90%;
+    height: 10%;
     border: none;
-    background-color: lightgray;
+    background-color: rgb(240, 233, 233);
+    margin-bottom: 5%;
+    border-radius: 3px;
+    padding-left: 2%;
+}
+.update_container input:focus{
+    outline: none;
 }
 
 .update_button{
-    position: relative;
     border: none;
-    height: 20px;
-    width: 70px;
-    top: 350px;
-    right: 330px;
+    height: 40%;
+    width: 70px;  
+    border-radius: 40px;
+}
+
+/* ///////////////////////////////////////////////////////////// */
+
+.cursor:hover{
+    cursor: pointer;
 }
