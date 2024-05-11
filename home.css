@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: rgb(46, 43, 43);
+}
+.background_container{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-image: url(/images/login_Page.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+.login_container{
+    z-index: 1;
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    margin-top: 145px;
+    margin-left: 50px;
+    font-family: "Poppins", sans-serif;
+
+}
+.welcome{
+    font-size: 35px;
+    font-weight: 500;
+}
+.message{
+    font-weight: 500;
+    font-size: 17px;
+}
+.email_box, .password_box{
+    margin-top: 40px;
+    height: 55px;
+    width: 100%;
+}
+.email_label, .password_label{
+    font-size: 15px;
+    font-weight: 500;
+}
+.email_address, .password{
+    height: 27px;
+    width: 330px;
+    border: white solid 1.5px;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 10px;
+    color: white;
+}
+
+.password_box{
+    margin-top: 30px;
+}
+.email_address:focus, .password:focus{
+    color: white;
+    outline: none;
+}
+
+::placeholder{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+}
+.login_button{
+    margin-top: 20px;
+    height: 25px;
+    width: 330px;
+    border: none;
+    border-radius: 7px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+.login_button:hover{
+    background-color: rgb(228, 223, 223);
+}
