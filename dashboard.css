@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.background{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(45deg, #828273 50%, #1C1C19 50%);
+}
+
+.container{
+    position: absolute;
+    margin: 4rem;
+    height: 85vh;
+    width: 92vw;
+    background-image: url(/images/userDashboard2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.8rem;
+    z-index: 1;
+    padding: 2.5rem;
+}
+
+.data_container{
+    height: 86%;
+    width: 100%;
+    overflow-x: hidden;
+    padding-top: 2rem;
+   
+    /* display: none; */
+}
+
+.nav_bar{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+
+    /* display: none; */
+}
+
+/*/////// delete button /////// */
+.delete_customer{
+    height: 4vh;
+    width: 2.5vw;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+.delete_customer img{
+    height: 4vh;
+}
+.delete_customer img:hover{
+    cursor: pointer;
+}
+/* Search Bar */
+
+.search_bar{
+    width: 100%;
+}
+
+.search_field{
+    position: absolute;
+    box-sizing: border-box;
+    height: 5.5vh;
+    width: 73%;
+    padding-left: 2rem;
+    margin: 0.5rem;
+    background-color: #ffffff;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 4rem;
+    z-index: 0;
+    box-shadow: inset 0 0 5px rgb(172, 172, 172);
+}
+.search_field:focus{
+    outline: none;
+}
+.search_btn{
+    position: absolute;
+    top: 6.5vh;
+    left: 67.5vw;
+    height: 35px;
+    width: 35px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgb(160, 160, 160);
+    z-index: 1;
+}
+.search_btn img{
+    height: 25px;
+    width: 25px; 
+    position: relative;
+    top: 10%;
+}
+/* //////////////////////  Inner Shadow Effect  ///////////////// */
+.inner_shadow:hover{
+    box-shadow: inset 0px 0px 15px rgb(207, 203, 203);
+}
+
+.new_data{
+    height: 8vh;
+    width: 15vw;
+}
+
+.upload_btn{
+    height: 6vh;
+    border: none;
+    width: 13vw;
+    margin: 0.5rem;
+    font-size: 1.4rem;
+    background-color: #ffffff;
+    border-radius: 3rem;
+    color: #81817d;
+    box-shadow: inset 0 0 5px rgb(172, 172, 172);
+}
+.customer{
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5vh;
+    justify-content:space-between;
+    border-radius: 2rem;
+    color: rgb(255, 255, 255);
+    background-color: rgba(150, 143, 143, 0.541);
+    padding: 2rem;
+
+}
+.customer h3{
+    font-size: 1rem;
+    font-weight: 300;
+}
+.special{
+    color: rgb(206, 199, 199);
+}
+.overlay_window{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 3;
+}
+
+/* ///////////////////////  Uploading customer data window ////////////////////////////// */
+
+.upload_window{
+    position: absolute;
+    height: 50vh;
+    width: 40vw;
+    background-color: #443F3F;
+    border-radius: 1rem;
+    z-index: 3;
+}
+.customer_data{
+    height: 100%;
+}
+.customer_data input{
+    width: 90%;
+    height: 10%;
+    border: none;
+    background-color: rgb(240, 233, 233);
+    margin-bottom: 5%;
+    border-radius: 3px;
+    padding-left: 2%;
+    color: black;
+}
+.customer_data input:focus{
+    outline: none;
+}
+
+.close_window{
+    height: 50%;
+    width: 5%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+.close_window img{
+    height: 70%;
+    width: 70%;
+}
+.submit_btn{
+    border: none;
+    height: 40%;
+    width: 70px;  
+    border-radius: 3rem;
+}
+.button:hover{
+    background-color: gray;
+}
+
+.hidden{
+    display: none !important;
+}
+
+/* /////////////////////////////////////////// Customer Details Window ///////////////////////////////////////////////// */
+.whole_area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detais_window{
+    height: 50vh;
+    width: 40vw;
+    background-color: #443F3F;
+    border-radius: 1rem;
+    z-index: 3;
+}
+
+.box_1{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2%;
+}
+.box_2{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    padding-left: 5%;
+
+}
+.box_3{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* /// close button  //// */
+.close_detailsWindow{
+    height: 50%;
+    width: 5%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+.close_detailsWindow img{
+    height: 70%;
+    width: 70%;
+}
+
+/* //// Update Button  ////// */
+.update_details{
+    border: none;
+    height: 3vh;
+    width: 4vw;  
+    border-radius: 3rem;
+}
+
+.column1, .column2 {
+    width: 50%;
+    position: relative;
+    font-size: 1rem;
+    color: white;
+}
+
+.column1 div, .column2 div{
+    height: 10%;
+    width: 85%;
+    background-color: #d9d9d95d;
+    margin-bottom: 4%;
+    padding-left: 4%;
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+}
+.box_2  p{
+    margin-bottom: 1%;
+    font-weight: 300;
+    font-size: 80%;
+}
+/* details button */
+.details_customer{
+    height: 2rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+.details_customer img{
+    height: 2.1rem;
+}
+.details_customer > img:hover{
+    cursor: pointer;
+}
+/* ////////////////////////////////  Update Details Feature /////////////////////////////////// */
+
+/* .update_container{
+    position: relative;
+    display: flex;
+    top: 30px;
+    right: 10px;
+} */
+
+.update_container input{
+    width: 90%;
+    height: 10%;
+    border: none;
+    background-color: rgb(240, 233, 233);
+    margin-bottom: 5%;
+    border-radius: 3px;
+    padding-left: 2%;
+}
+.update_container input:focus{
+    outline: none;
+}
+
+.update_button{
+    border: none;
+    height: 3vh;
+    width: 4vw;
+    border-radius: 3rem;
+}
+
+/* ///////////////////////////////////////////////////////////// */
+
+.cursor:hover{
+    cursor: pointer;
+}
+/* ////////////// RESPONSIVENESS //////////// */
+@media (max-width: 475px){
+    .container{
+        display: none;
+    }
+    .background::after{
+        content: "Rotate Your Phone";
+        color: white;
+    }
+}
+@media (min-width: 476px) and (max-width: 640px){
+    .container{
+        display: none;
+    }
+    .background::after{
+        content: "Rotate Your Phone";
+        color: white;
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 641px) and (max-width: 768px){
+    .container{
+        display: none;
+    }
+    .background::after{
+        content: "Rotate Your Phone";
+        color: white;
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    .container{
+        height: 90vh;
+        margin: 2rem;
+    }
+    .search_btn img {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        top: 10%;
+    }
+    .search_btn{
+        top: 8vh;
+        height: 30px;
+        width: 30px;
+        left: 68.5vw;
+    }
+    .upload_btn {
+        height: 5.5vh;
+        width: 11vw;
+        margin: 0.5rem;
+        font-size: 1rem;
+    }
+    .upload_window {
+        width: 59vw;
+    }
+    .detais_window{
+        width: 59vw;
+    }
+    .update_details {
+        height: 4vh;
+        width: 9vw;
+    }
+    .update_button {
+        height: 4vh;
+        width: 9vw;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1280px){
+    .container{
+        height: 85vh;
+        margin: 3rem;
+    }
+    .search_btn img {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        top: 10%;
+    }
+    .search_btn{
+        top: 8vh;
+        height: 30px;
+        width: 30px;
+        left: 68vw;
+    }
+    .upload_btn {
+        height: 5.5vh;
+        width: 12vw;
+        margin: 0.5rem;
+        font-size: 1rem;
+    }
+    .upload_window {
+        width: 48vw;
+    }
+    .detais_window{
+        width: 48vw;
+    }
+    .update_details {
+        height: 3vh;
+        width: 7vw;
+    }
+    .update_button {
+        height: 3vh;
+        width: 7vw;
+    }
+}
+@media (min-width: 1281px) and (max-width: 1536px){
+    .container{
+        height: 85vh;
+        margin: 3rem;
+    }
+    .search_btn img {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        top: 10%;
+    }
+    .search_btn{
+        top: 8vh;
+        height: 30px;
+        width: 30px;
+        left: 68vw;
+    }
+    .upload_btn {
+        height: 5.5vh;
+        width: 12vw;
+        margin: 0.5rem;
+        font-size: 1rem;
+    }
+    .upload_window {
+        width: 48vw;
+    }
+    .detais_window{
+        width: 48vw;
+    }
+    .update_details {
+        height: 3vh;
+        width: 7vw;
+    }
+    .update_button {
+        height: 3vh;
+        width: 7vw;
+    }
+}
+@media (max-height: 450px) and (orientation: landscape){
+    .container{
+        height: 91vh;
+        width: 95vw;
+        margin: 1rem;
+        padding: 1rem;
+        display: block;
+    }
+    .background::after{
+        content: none;
+    }
+    .search_field {
+        height: 7.5vh;
+        width: 75%;
+        padding-left: 1rem;
+        margin: 0.5rem;
+        font-size: 1rem;
+    }
+    .search_btn img {
+        height: 15px;
+        width: 15px;
+        position: relative;
+        top: 10%;
+    }
+    .customer {
+        height: 6vh;
+        padding: 1.2rem;
+    }
+    .customer h3{
+        font-size: 0.8rem;
+    }
+    .search_btn{
+        top: 7.5vh;
+        height: 20px;
+        width: 20px;
+        left: 71vw;
+    }
+    .upload_btn {
+        height: 7vh;
+        width: 12vw;
+        margin: 0.7rem;
+        font-size: 0.8rem;
+    }
+    .details_customer img {
+        height: 1rem;
+    }
+    .details_customer {
+        height: 1rem;
+    }
+    .upload_window {
+        height: 84vh;
+        width: 68vw;
+    }
+    .detais_window{
+        height: 84vh;
+        width: 68vw;
+    }
+    .update_details {
+        height: 6vh;
+        width: 10vw;
+    }
+    .update_button {
+        height: 6vh;
+        width: 10vw;
+    }
+}
